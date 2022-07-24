@@ -1,0 +1,22 @@
+@model IEnumerable<int>
+<div>
+
+    @foreach (var item in Model)
+    {
+        if (item % 3 == 0 && item % 5 == 0)
+        {
+            <p>Nordea Bank</p>
+
+        }
+        else if (item % 3 == 0)
+        {
+            <p>Nordea</p>
+
+        }
+        else if (item % 5 == 0)
+        {
+            <p>Bank</p>
+        }
+
+    }
+</div>
